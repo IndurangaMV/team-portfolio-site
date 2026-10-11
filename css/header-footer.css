@@ -1,1 +1,164 @@
-/* MEMBER 4: header, navigation and footer styles */
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    /* Header Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #4a148c; /* Solid deep purple background */
+      padding: 0 4rem;
+      height: 70px;
+      color: #ffffff;
+    }
+
+    /* Logo / Brand Styling */
+    .brand {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .brand span {
+      font-weight: 400;
+      opacity: 0.85;
+    }
+
+    /* Navigation Container */
+    .nav-container {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    /* Nav Links */
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 400;
+      opacity: 0.85;
+      padding-bottom: 6px;
+      position: relative;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+    /* Active Link (Underline indicator) */
+    .nav-links a.active {
+      opacity: 1;
+    }
+
+    .nav-links a.active::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+    }
+
+    /* Theme Toggle Button */
+      .theme-toggle {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.6); /* Slightly thicker semi-transparent border */
+  border-radius: 8px; /* Clean rounded corners matching the icon container */
+  color: rgba(255, 255, 255, 0.85); /* Matches the inner moon stroke opacity */
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 6px;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .theme-toggle:hover {
+       border-color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .theme-toggle i {
+      font-size: 0.85rem;
+      transform: rotate(-15deg); /* Matches the slight angle of the crescent icon */
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 0 1.5rem;
+      }
+      .nav-links {
+        gap: 1rem;
+      }
+      .nav-container {
+        gap: 1rem;
+      }
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    /* Footer Styling */
+    .site-footer {
+      background-color: #1e1e2f; /* Deep dark blue/purple background */
+      color: rgba(255, 255, 255, 0.7); /* Slightly muted white for secondary text */
+      text-align: center;
+      padding: 2.5rem 1rem;
+      font-size: 0.85rem;
+      line-height: 1.8;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    /* Back to Top Link */
+    .back-to-top {
+      color: #7c4dff; /* Distinct lighter purple/blue accent link color */
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 0.2rem;
+      transition: color 0.2s ease;
+    }
+
+    .back-to-top:hover {
+      color: #b388ff;
+      text-decoration: underline;
+    }
+    .theme-toggle svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
