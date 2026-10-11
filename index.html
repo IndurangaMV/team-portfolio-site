@@ -11,9 +11,157 @@
 
   <!-- MEMBER 4: HEADER goes here -->
 
-  <main>
-    <!-- MEMBER 1: PAGE CONTENT (sections) goes here -->
-  </main>
+<!-- ================= HERO SECTION ================= -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">
+      We build things, with <span id="typed-text" class="typed-text"></span>
+    </h1>
+    <p class="hero-subtitle">
+      A four-member team learning Full-Stack Software Development with
+      Git &amp; GitHub collaboration — combining IoT, electronics,
+      and computer-science integrated engineering.
+    </p>
+    <a href="#team" class="btn btn-primary">Meet the Team</a>
+  </div>
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+<section id="about" class="about">
+  <div class="container">
+    <h2 class="section-title">About the Project</h2>
+    <p class="section-subtitle">
+      Our group has the combined capacity to design and build high-level
+      IoT, electronics, and CS-integrated projects — from embedded
+      sensors to polished web interfaces.
+    </p>
+
+    <div class="about-grid">
+      <article class="about-card">
+        <h3>HTML</h3>
+        <p>Semantic structure for the whole page.</p>
+      </article>
+
+      <article class="about-card">
+        <h3>CSS</h3>
+        <p>Responsive layout, colours and dark mode.</p>
+      </article>
+
+      <article class="about-card">
+        <h3>JavaScript</h3>
+        <p>Interactivity: menu, theme, form checks.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEAM SECTION ================= -->
+<section id="team" class="team">
+  <div class="container">
+    <h2 class="section-title">Our Team</h2>
+    <p class="section-subtitle">
+      Four developers, four skill sets, one shared repository.
+    </p>
+
+    <div class="team-grid">
+
+      <article class="team-card">
+        <div class="avatar">M1</div>
+        <h3>Vimukthi M. Induranga</h3>
+        <p class="role">HTML Developer &amp; Team Lead</p>
+        <p class="skills">
+          IoT Development · Web Development · Embedded Systems ·
+          Sensor Integration · Full-Stack Architecture
+        </p>
+      </article>
+
+      <article class="team-card">
+        <div class="avatar">M2</div>
+        <h3>Teshan Silva</h3>
+        <p class="role">CSS Developer</p>
+        <p class="skills">
+          3D Modelling &amp; Design · UI/UX · Responsive Layouts ·
+          CSS Animation · Visual Prototyping
+        </p>
+      </article>
+
+      <article class="team-card">
+        <div class="avatar">M3</div>
+        <h3>Thinuri Nuransi</h3>
+        <p class="role">JavaScript Developer</p>
+        <p class="skills">
+          Front-End Interactivity · IoT Dashboards · Data Visualisation ·
+          API Integration · Form Validation
+        </p>
+      </article>
+
+      <article class="team-card">
+        <div class="avatar">M4</div>
+        <h3>Roshel Achini</h3>
+        <p class="role">Header &amp; Footer Developer</p>
+        <p class="skills">
+          Component Design · Navigation Systems · Theming (Dark Mode) ·
+          Accessibility · Cross-Browser Styling
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle">
+      Have a project idea? Send us a message.
+    </p>
+
+    <form id="contact-form" class="contact-form" novalidate>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+        <small class="error-message" id="name-error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          required
+        />
+        <small class="error-message" id="email-error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Write your message"
+          required
+        ></textarea>
+        <small class="error-message" id="message-error"></small>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+
+      <p id="form-success" class="form-success" hidden>
+        Thanks! Your message was sent.
+      </p>
+    </form>
+  </div>
+</section>
 
   <!-- MEMBER 4: FOOTER goes here -->
 
